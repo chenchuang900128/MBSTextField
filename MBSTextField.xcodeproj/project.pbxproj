@@ -14,6 +14,10 @@
 		EA57AB892107146700696ED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA57AB872107146700696ED0 /* LaunchScreen.storyboard */; };
 		EA57AB8C2107146700696ED0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA57AB8B2107146700696ED0 /* main.m */; };
 		EA57AB962107146700696ED0 /* MBSTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA57AB952107146700696ED0 /* MBSTextFieldTests.m */; };
+		EA57ABA72107159100696ED0 /* MBAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA57ABA12107159000696ED0 /* MBAccessoryView.m */; };
+		EA57ABA82107159100696ED0 /* MBSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EA57ABA22107159000696ED0 /* MBSTextField.m */; };
+		EA57ABA92107159100696ED0 /* UITextField+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = EA57ABA52107159100696ED0 /* UITextField+Utils.m */; };
+		EA57ABAC210717DD00696ED0 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = EA57ABAB210717DD00696ED0 /* RegexKitLite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		EA57AB912107146700696ED0 /* MBSTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBSTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA57AB952107146700696ED0 /* MBSTextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBSTextFieldTests.m; sourceTree = "<group>"; };
 		EA57AB972107146700696ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA57ABA12107159000696ED0 /* MBAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAccessoryView.m; sourceTree = "<group>"; };
+		EA57ABA22107159000696ED0 /* MBSTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSTextField.m; sourceTree = "<group>"; };
+		EA57ABA32107159000696ED0 /* UITextField+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Utils.h"; sourceTree = "<group>"; };
+		EA57ABA42107159100696ED0 /* MBAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAccessoryView.h; sourceTree = "<group>"; };
+		EA57ABA52107159100696ED0 /* UITextField+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Utils.m"; sourceTree = "<group>"; };
+		EA57ABA62107159100696ED0 /* MBSTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSTextField.h; sourceTree = "<group>"; };
+		EA57ABAA210717DD00696ED0 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		EA57ABAB210717DD00696ED0 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,7 @@
 				EA57AB7D2107146500696ED0 /* AppDelegate.m */,
 				EA57AB7F2107146500696ED0 /* ViewController.h */,
 				EA57AB802107146500696ED0 /* ViewController.m */,
+				EA57ABA02107151600696ED0 /* Source */,
 				EA57AB822107146500696ED0 /* Main.storyboard */,
 				EA57AB852107146700696ED0 /* Assets.xcassets */,
 				EA57AB872107146700696ED0 /* LaunchScreen.storyboard */,
@@ -101,6 +114,21 @@
 				EA57AB972107146700696ED0 /* Info.plist */,
 			);
 			path = MBSTextFieldTests;
+			sourceTree = "<group>";
+		};
+		EA57ABA02107151600696ED0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EA57ABA42107159100696ED0 /* MBAccessoryView.h */,
+				EA57ABA12107159000696ED0 /* MBAccessoryView.m */,
+				EA57ABA62107159100696ED0 /* MBSTextField.h */,
+				EA57ABA22107159000696ED0 /* MBSTextField.m */,
+				EA57ABA32107159000696ED0 /* UITextField+Utils.h */,
+				EA57ABA52107159100696ED0 /* UITextField+Utils.m */,
+				EA57ABAA210717DD00696ED0 /* RegexKitLite.h */,
+				EA57ABAB210717DD00696ED0 /* RegexKitLite.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +231,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA57ABAC210717DD00696ED0 /* RegexKitLite.m in Sources */,
 				EA57AB812107146500696ED0 /* ViewController.m in Sources */,
 				EA57AB8C2107146700696ED0 /* main.m in Sources */,
+				EA57ABA72107159100696ED0 /* MBAccessoryView.m in Sources */,
+				EA57ABA92107159100696ED0 /* UITextField+Utils.m in Sources */,
 				EA57AB7E2107146500696ED0 /* AppDelegate.m in Sources */,
+				EA57ABA82107159100696ED0 /* MBSTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
